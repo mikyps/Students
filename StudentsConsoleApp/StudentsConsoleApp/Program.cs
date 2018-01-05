@@ -13,17 +13,21 @@ namespace StudentsConsoleApp
     {
         static void Main(string[] args)
         {
+            StudentsManager manager = new StudentsManager();
             try
-            {
-                StudentsManager manager = new StudentsManager();
+            {                
                 manager.StudentsList = CSVReader.ReadStudentFile("st.csv");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error trying to read the csv file occured.");
+                Console.WriteLine("An error trying to read the CSV file has occurred.");
             }
 
-            Console.WriteLine("The CSV file has been read correctly...");
+            Console.WriteLine("The CSV file has been read correctly... Press a key to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Menu mnu = new Menu(manager);
+            mnu.Begin();
 
         }
     }
