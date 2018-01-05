@@ -1,0 +1,8 @@
+*.ide
+*.lock
+*.ide-shm
+*.ide-wal
+StudentsConsoleApp/StudentsConsoleApp/obj/
+StudentsConsoleApp/StudentsConsoleApp/bin/
+StudentsConsoleApp/StudentsProcessor/obj/Debug/
+StudentsConsoleApp/StudentsFactory/obj/
